@@ -77,4 +77,5 @@ RUN curl -o flutter.tar.xz $FLUTTER_URL \
   && flutter update-packages
 
 # ใช้สำหรับให้สามารถ exec เข้าไปได้
+COPY . /app
 CMD ["tail", "-f", "/dev/null"]
